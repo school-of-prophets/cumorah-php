@@ -1,0 +1,124 @@
+html, * {
+    font-family: var(--global-font-family);
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+    font-weight: inherit;
+}
+b { font-weight: bold; }
+h1 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: .5lh 0 .25lh 0;
+    line-height: 1.2;
+    page-break-after: never;
+}
+h2 {
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: .25lh 0;
+    line-height: 1.2;
+    padding: .5lh 0 .25lh 0;
+    page-break-after: never;
+}
+h3 {
+    font-weight: bold;
+    font-size: 1.1rem;
+    line-height: 1.2;
+    margin: 0;    
+}
+h4 {
+    font-weight: bold;
+    font-size: .9rem;
+    margin: 1em 0 0 0;
+    page-break-after: never;
+}
+small {
+    font-size: 75%;
+    opacity: 66%;
+}
+h3.chapter-aka { margin-top: .5rem; }
+a h4 { margin-top: 0; padding: .125em; }
+a.volume-link, a.book-link, a.chapter-link, a.breadcrumb-link {
+    margin: .5em 0;
+    padding: .5em 1em;
+    background-color: #efefef;
+    border-color: #ddd;
+    color: #444;
+    text-decoration: none;
+    display: block;
+    transition: 0.25s;
+}
+a.volume-link:hover, a.book-link:hover, a.chapter-link:hover, a.breadcrumb-link:hover {
+    text-decoration: none;
+    background-color: #f8f8f8;
+    color: #222;
+    border-color: #ccc;
+}
+div.collection-of-books {
+    margin: .5em 1em;
+}
+h3.collection-name {
+    margin-top: .75em;
+    padding-top: .75em;
+    border-top: .125em solid #eee; 
+    margin-bottom: .75em
+}
+div.verse {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+}
+div.verse.long-label {
+    display: flex;
+    flex-direction: column;
+    flex-wrap:nowrap;
+}
+h4.verse-label {
+    color: #ccc;
+    font-size: 150%;
+    width: 3rem;
+    min-width: 3rem;
+    margin: 0 1rem 0 0;
+    text-align: right;
+}
+div.verse.long-label h4.verse-label {
+    color: #888;
+    font-size: 85%;
+    width: 100%;
+    text-align: left;
+    margin-left: 2rem;
+    margin-top: .5rem;
+}
+div.verse.long-label p, div.verse.no-label p {
+    margin-left: 4rem;
+}
+p {
+    display: block;
+    font-size: 1rem;
+    font-weight: normal;
+    margin: .25em 2rem .25rem 0;
+    line-height: 1.2em;
+    text-align: left;
+    widows: 2;
+    orphans: 2;
+}
+.verse p {
+    flex-grow: 1;
+}
+p.book-sum, p.chapter-sum {
+    font-style: italic;
+}
+sup {
+    font-size: .6rem;
+    opacity: .75;
+}
+.inline-img {
+    margin:auto;
+}
+.note-label {
+    font-size: 75%;
+    font-weight: bold;
+    margin-right: 1em;
+    opacity: .5;
+}

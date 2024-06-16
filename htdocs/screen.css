@@ -1,0 +1,14 @@
+html {
+    font-size: min(24pt, max(16pt, 5vw));
+}
+body {
+    background-color: #f8f8f8;
+}
+div#content {
+    background-color: white;
+    filter: drop-shadow(1px 1px 4px #888888);
+    padding: .5rem 1rem;
+    margin: .5rem auto 1rem;
+    max-width: 35rem;
+    min-height: calc(100vh - 3.5rem);
+}
